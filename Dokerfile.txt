@@ -1,0 +1,4 @@
+FROM open jdk:17
+EXPOSE 8080
+ADD target/jenkina-pipeline.jar jenkins-pipeline.jar
+ENTRYPOINT["java","-jar","/jenkins-pipeline"]
